@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WildWing Haven - Magical Forest Adventure</title>
+    <link rel="canonical" href="https://vive-y-juega-feliz.com/" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel='icon' href='/src/icons/logo.png' type='image/x-icon'>
@@ -441,9 +442,6 @@
 
 </html>
 
-
-<?php
-$cookieConsentHtml = '
 <style>
 .cookie-consent {
     position: fixed;
@@ -625,9 +623,3 @@ document.addEventListener("DOMContentLoaded", function() {
    rejectBtn.addEventListener("click", () => handleConsent("rejected"));
 });
 </script>
-';
-
-if (!isset($_COOKIE["aprenderd_cookie_consent"])) {
-    echo $cookieConsentHtml;
-}
-?>
